@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://your-solution-url.com)
-- [Add Live Site](https://your-live-site-url.com)
+- [Add Live Site](https://6xg0d.github.io/order-summary-component/)
 
 ## My process
 
