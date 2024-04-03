@@ -8,7 +8,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 30px;
   background-color: hsl(225, 100%, 94%);
   font-family: "Red Hat Display", sans-serif;
   background-image: url(images/pattern-background-desktop.svg);
@@ -26,27 +25,30 @@ body {
   background-color: #fff;
   text-align: center;
 }
-
 /*Img header*/
 .card-header > img {
   width: 100%;
-  border-radius: 20px 20px 0 0;
   height: auto;
+  border-radius: 20px 20px 0 0;
 }
 /*CARD CONTENT BODY*/
 .card-content-body {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  padding: 20px;
   width: 100%;
+  padding: 20px;
 }
 .card-content-body > h1{
-  color: hsl(223, 47%, 23%);
   font-weight: 900;
 }
-.card-content-body > p {
+.card-content-body p,
+.cancel-order {
   color: hsl(224, 23%, 55%);
+}
+.card-content-body p,
+.card-content-body a {
+  font-size: 1em;
 }
 /*ANNUAL PLAN SECTION*/
 .annual-plan-section {
@@ -54,52 +56,52 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding: 20px;
   border-radius: 20px;
-  width: 100%;
   background-color: hsl(225, 100%, 98%);
 }
-.annual-plan-section > a:hover {
-  color: hsl(223, 47%, 23%);
-}
+/*PLAN PRICING*/
 .plan-pricing {
   display: flex;
   flex-direction: column;
 }
 .plan-pricing > h4 {
-  color: hsl(223, 47%, 23%);
   font-weight: 900;
 }
-.plan-pricing > p {
-  color: hsl(224, 23%, 55%);
-}
-.annual-plan-section > .change-link:hover {
+/*ANNUAL PLAN SECTION*/
+.annual-plan-section > a:hover,
+.cancel-order:hover,
+.plan-pricing > h4,
+.card-content-body > h1 {
   color: hsl(223, 47%, 23%);
+}
+.annual-plan-section > a:hover,
+.payment-button {
   text-decoration: none;
 }
+.annual-plan-section > a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+/*PAYMENT BUTTON*/
 .payment-button {
-  display: block;
-  text-decoration: none;
   background-color: hsl(245, 75%, 52%);
   color: #fff;
   font-weight: 900;
-  padding: 15px 0 15px 0;
+  padding: 15px 0;
   border-radius: 15px;
   width: 100%;
-  box-shadow: 0 10px 15px 0 lightgrey;
+  box-shadow: 0 10px 15px lightgrey;
 }
 .payment-button:hover {
-  background-color: hsl(223, 47%, 23%);
+  background-color: hsl(223, 47%, 62.5%);
 }
 .cancel-order {
   font-weight: 900;
   text-decoration: none;
-  color: hsl(224, 23%, 55%);
 }
-.cancel-order:hover {
-  color: hsl(223, 47%, 23%);
-}
-
+/*RESPONSIVE*/
 @media(max-width:375px){
   body {
     background-image: url(images/pattern-background-mobile.svg);
