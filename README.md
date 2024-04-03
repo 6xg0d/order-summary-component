@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Add Live Site](https://6xg0d.github.io/order-summary-component/)
+- [Solution URL](https://www.frontendmentor.io/solutions/order-summary-component-challenge-solution-RKDBUSsHpw)
+- [Live Site](https://6xg0d.github.io/order-summary-component/)
 
 ## My process
 
